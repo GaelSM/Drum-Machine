@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#drum-machine{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#display{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.pads-container{
+  border: 5px solid;
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  & div{
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 1rem;
+
+    & h2{
+      font-weight: 100;
+    }
+  }
+}
